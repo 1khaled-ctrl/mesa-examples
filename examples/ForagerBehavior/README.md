@@ -22,12 +22,12 @@ searching → (energy low) → resting → (energy restored) → searching
 | `ForageBehavior` | Collects resources from current cell |
 | `RestBehavior` | Recovers energy when resting |
 
-## How to Run
-
-\```bash
-pip install mesa
-solara run app.py
-\```
+Line 1: ## How to Run
+Line 2: (empty)
+Line 3: ```bash
+Line 4: pip install mesa
+Line 5: solara run app.py
+Line 6: ```
 ## Purpose
 
 This example is a prototype for the
