@@ -23,11 +23,11 @@ searching → (energy low) → resting → (energy restored) → searching
 | `RestBehavior` | Recovers energy when resting |
 
 ## How to Run
-```bash
-pip install mesa
-python run_simulation.py
-```
 
+\```bash
+pip install mesa
+solara run app.py
+\```
 ## Purpose
 
 This example is a prototype for the
