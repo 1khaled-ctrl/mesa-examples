@@ -1,5 +1,5 @@
 import mesa
-from mesa.discrete_space import OrthogonalMooreGrid, CellAgent
+from mesa.discrete_space import CellAgent, OrthogonalMooreGrid
 
 
 class ForagerAgent(CellAgent):
@@ -69,9 +69,7 @@ class ForagerModel(mesa.Model):
         resource_density=0.3,
     ):
         super().__init__()
-        self.grid = OrthogonalMooreGrid(
-            (width, height), torus=True, capacity=None
-        )
+        self.grid = OrthogonalMooreGrid((width, height), torus=True, capacity=None)
 
         # Place resources
         self.resources = {}
@@ -94,9 +92,7 @@ class ForagerModel(mesa.Model):
                 "searching": lambda m: sum(
                     1 for a in m.agents if a.state == "searching"
                 ),
-                "resting": lambda m: sum(
-                    1 for a in m.agents if a.state == "resting"
-                ),
+                "resting": lambda m: sum(1 for a in m.agents if a.state == "resting"),
                 "total_resources": lambda m: sum(m.resources.values()),
             },
         )
