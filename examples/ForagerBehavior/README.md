@@ -23,7 +23,7 @@ searching → (energy low) → resting → (energy restored) → searching
 | `RestBehavior` | Recovers energy when resting |
 
  ## How to Run
- (empty)
+
 ```bash
  pip install mesa
  solara run app.py
